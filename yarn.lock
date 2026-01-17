@@ -4143,6 +4143,11 @@ router@^2.2.0:
     parseurl "^1.3.3"
     path-to-regexp "^8.0.0"
 
+run-script-webpack-plugin@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.npmjs.org/run-script-webpack-plugin/-/run-script-webpack-plugin-0.2.3.tgz"
+  integrity sha512-GX1JqSNAmtGMAcE3iyLFlnxWpxKBWPNkpac/02w2RF3xynTjA8LWLkFzMzlvATA3c3kARWnT2OrsnvJviB79Lg==
+
 rxjs@^7.1.0, rxjs@^7.8.1:
   version "7.8.2"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-7.8.2.tgz"
@@ -4855,12 +4860,17 @@ webpack-node-externals@3.0.0:
   resolved "https://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz"
   integrity sha512-LnL6Z3GGDPht/AigwRh2dvL9PQPFQ8skEpVrWZXLWBYmqcaojHNN0onvHzie6rq7EWKrrBfPYqNEzTJgiwEQDQ==
 
+webpack-pnp-externals@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/webpack-pnp-externals/-/webpack-pnp-externals-1.1.0.tgz"
+  integrity sha512-jotzsud210jTpoCMvuJWlIb1EeXxlKHjBtK9iClUgehDVDcaeMOfvw5xCYUCen/QdqfJle8J6oiuP8gapu/Dzw==
+
 webpack-sources@^3.3.3:
   version "3.3.3"
   resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.3.3.tgz"
   integrity sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==
 
-webpack@^5.0.0, webpack@^5.1.0, webpack@^5.11.0, webpack@5.104.1:
+webpack@^5.0.0, webpack@^5.1.0, webpack@^5.104.1, webpack@^5.11.0, webpack@5.104.1:
   version "5.104.1"
   resolved "https://registry.npmjs.org/webpack/-/webpack-5.104.1.tgz"
   integrity sha512-Qphch25abbMNtekmEGJmeRUhLDbe+QfiWTiqpKYkpCOWY64v9eyl+KRRLmqOFA2AvKPpc9DC6+u2n76tQLBoaA==
