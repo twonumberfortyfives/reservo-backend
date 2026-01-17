@@ -13,8 +13,8 @@ async function bootstrap() {
     .setVersion('1.0')
     .addTag('reservo')
     .build();
-  const documentFactory = () => SwaggerModule.createDocument(app, config)
-  SwaggerModule.setup('api', app, documentFactory)
+  const documentFactory = () => SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('api', app, documentFactory);
 
   const port = process.env.PORT || 3000;
   const host = process.env.HOST || '0.0.0.0';
