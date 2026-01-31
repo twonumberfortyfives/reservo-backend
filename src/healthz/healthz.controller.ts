@@ -7,9 +7,9 @@ export class HealthzController {
     constructor(private readonly healthzService: HealthzService) {}
 
     @Get("healthz")
-    checkServer(@Res() res: Response): Response {
+    async checkServer(@Res() res: Response): Promise<Response> {
         return res.status(HttpStatus.OK).json({
-            status: this.healthzService.checkServer()
+            status: await this.healthzService.checkServer()
         })
     }
 }
