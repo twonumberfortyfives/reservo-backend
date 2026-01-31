@@ -1,10 +1,23 @@
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
+import { ConfigModule } from "@nestjs/config";
 import { HealthzModule } from './healthz/healthz.module';
 import { AuthModule } from './auth/auth.module';
+import { AppService } from './app.service';
+import { CsrfMiddleware } from './middlewares/csrf.middleware';
 
 @Module({
-  imports: [HealthzModule, AuthModule],
+  imports: [
+    HealthzModule, 
+    AuthModule,
+    ConfigModule.forRoot({isGlobal: true})
+  ],
+  providers: [AppService],
   controllers: [],
-  providers: [],
 })
-export class AppModule {}
+export class AppModule implements NestModule{
+  async configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(CsrfMiddleware)
+      .forRoutes('*path');
+  }
+}
