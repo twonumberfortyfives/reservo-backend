@@ -16,8 +16,9 @@ export class AuthController {
     }
     
     @Post("logout")
-    async logout(res: Request) {
-        return
+    async logout(@Res() res: Response): Promise<Response<{message: string}>> {
+        res.clearCookie('refresh_token', {httpOnly: true});
+        return res.status(200).json({message: 'Logged out successfully'});
     }
 
     @Get("callback")
