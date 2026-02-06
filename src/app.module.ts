@@ -1,7 +1,7 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { ConfigModule } from "@nestjs/config";
 import { HealthzModule } from './healthz/healthz.module';
-import { AuthModule } from './auth/auth.module';
+import { AuthModule } from './oauth/auth.module';
 import { AppService } from './app.service';
 import { CsrfMiddleware } from './middlewares/csrf.middleware';
 
