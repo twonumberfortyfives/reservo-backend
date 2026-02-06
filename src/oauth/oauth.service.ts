@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { URLSearchParams } from 'url';
 import { randomBytes } from 'crypto';
 import { Logger } from '@nestjs/common';
-import { IOAuthTokens } from './auth.interfaces';
+import { IOAuthTokens } from './oauth.interfaces';
 
 
 @Injectable()

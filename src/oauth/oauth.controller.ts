@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Query, Res, Req } from "@nestjs/common";
 import type { Request, Response } from 'express';
-import { AuthService } from './auth.service';
-import { IAccessTokenResponse, IOAuthLoginUrl } from "./auth.interfaces";
+import { AuthService } from './oauth.service';
+import { IAccessTokenResponse, IOAuthLoginUrl } from "./oauth.interfaces";
 
 
 @Controller("oauth")
